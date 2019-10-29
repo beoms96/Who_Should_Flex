@@ -10,6 +10,7 @@ HTML5 Canvas로 만들어졌습니다. 추후에 서버를 연결해 완성도�
 
 Idea from Min Hyeok Lee, Yoon Ho Jeon 
 
-ver 1.0.0 : 출시
-ver 1.1.0 UI 업데이트
+### 업데이트 로그
+Ver 1.0.0 : 출시  
+Ver 1.1.0 UI 업데이트
 
