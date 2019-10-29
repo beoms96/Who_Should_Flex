@@ -9,3 +9,5 @@
 HTML5 Canvas로 만들어졌습니다. 추후에 서버를 연결해 완성도를 높힐수도 있습니다.
 
 Idea from Min Hyuk Lee, Yoon Ho Jeon 
+
+### 카카오톡 링크 타고 들어가면 되지 않습니다. 기본 브라우저로 들어가야 됩니다.
