@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <script type="text/javascript">
+
+        var dx = Math.floor(Math.random() * 10) + 1; // speed of ball (1 ~ 10)
+
+        var canvasWidth = 500;
+        var canvasHeight = 500;
+
+        var r = 30; //radius Of Ball
+        var centerX = 250; //X point of ball's center point
+        var centerY = 250; //Y point of ball's center point
+
+        var isStarted = false; // before game start : false, after game start : true
+        var ballMove; // variable that saves interval
+        var score; // final Score
+
+        var NUMBER_FUNCTION_IS_EXECUTED = 0; // number of how many time does interval execute
+        var isHide = false; //boolean variable to check status of hiding
+
+        window.addEventListener('load', operate, false);
+
+        function operate() {
+            canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+
+            setFontSize(30);
+            ctx.fillText("Click on the screen to start", 250, 250);
+
+            canvas.addEventListener('mousedown', function (e) {
+                if (!isStarted)
+                    loopStart();
+                else if (isStarted && isHide)
+                    loopStop();
+            }, false);
+
+            canvas.addEventListener('touchstart', function(e){
+                if (!isStarted)
+                    loopStart();
+                else if (isStarted && isHide)
+                    loopStop();
+            })
+
+            function start() {
+                ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Erase all
+
+                setFontSize(30);
+                ctx.fillText("Click on the screen to stop", canvasWidth / 2, 100);
+
+                drawXasis();
+                drawYasis();
+
+                if (NUMBER_FUNCTION_IS_EXECUTED <= 800) { // 8 secs before hide
+                   drawBall();
+                }
+
+                if (NUMBER_FUNCTION_IS_EXECUTED >= 800) // after 8 secs, isHide becomes true
+                    isHide = true;
+
+                if (NUMBER_FUNCTION_IS_EXECUTED >= 500) { // rectangle to hide balls
+                    ctx.fillStyle = '#000000';
+                    if (NUMBER_FUNCTION_IS_EXECUTED <= 800)
+                        ctx.fillRect(0, 200, canvasWidth, 0 + (NUMBER_FUNCTION_IS_EXECUTED - 500) / 3);
+                    else
+                        ctx.fillRect(0, 200, canvasWidth, 100);
+                }
+
+                NUMBER_FUNCTION_IS_EXECUTED++;
+
+                if (centerX > (canvasWidth - r) || centerX < r) // if ball touches side of the canvas, ball changes its direction 
+                    dx = -dx;
+
+                centerX = centerX + dx;
+            }
+
+            function loopStart() { // function to start recursion
+                isStarted = true;
+                ballMove = setInterval(start, 10);
+            }
+
+            function loopStop() {
+                clearInterval(ballMove);
+                ctx.clearRect(0, 0, 500, 150);
+                ctx.clearRect(0, 310, canvasWidth, canvasHeight);
+                ctx.clearRect(0, canvasHeight / 2 - 50, canvasWidth, 100);
+
+                setFontSize(30);
+                ctx.fillText("Your Score", 250, 100);
+
+                setFontSize(50);
+                findScore();
+                ctx.fillText(String(score) + "%", 250, 400);
+
+                drawXasis();
+                drawYasis()
+                drawBall();
+            }
+        }
+
+        function drawXasis() { // X- axis line
+            ctx.beginPath();
+            ctx.moveTo(0, canvasHeight / 2);
+            ctx.lineTo(canvasWidth, canvasHeight / 2);
+            ctx.closePath();
+            ctx.strokeStyle = 'black';
+            ctx.stroke();
+        }
+
+        function drawYasis() { // y - axis line
+            ctx.beginPath();
+            ctx.moveTo(canvasWidth / 2, canvasHeight / 2 - 50);
+            ctx.lineTo(canvasWidth / 2, canvasHeight / 2 + 50);
+            ctx.closePath();
+            ctx.strokeStyle = "#BBBBBB";
+            ctx.stroke();
+        }
+
+        function drawBall() {
+            ctx.beginPath(); //ball
+            ctx.arc(centerX, centerY, r, 0, Math.PI * 2, false);
+            ctx.fillStyle = '#FFAA00';
+            ctx.fill();
+            ctx.strokeStyle = '#FFAA00';
+            ctx.stroke();
+            ctx.closePath();
+
+        }
+
+        function setFontSize(size) {
+            ctx.font = String(size) + 'px 고딕';
+            ctx.fillStyle = 'black';
+            ctx.textAlign = 'center';
+        }
+
+        function findScore() {
+            score = Math.floor(100 - (Math.abs(250 - centerX) / 250 * 100));
+        }
+
+    </script>
+</head>
+
+<body>
+    <div style="position: absolute; top: 50px; left: 50px; border: 1px solid black;">
+
+        <canvas id="canvas" width="500" height="500">
+            Your browser does not support the HTML 5 Canvas.
+        </canvas>
+    </div>
+</body>
+
+</html>
