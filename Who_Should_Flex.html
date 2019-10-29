@@ -32,19 +32,9 @@
             var centerX = window.innerWidth/2; //X point of ball's center point
             var centerY = window.innerHeight/2; //Y point of ball's center point
 
-            var flexImg = new Image();
-            flexImg.src = "yeomDa.jpg"
-            flexImg.addEventListener('load', function(){
-                ctx.drawImage( flexImg, 0, canvasHeight- (1 / 4 * canvasHeight),
-                 (1 / 4 * canvasWidth), (1 / 4 * canvasHeight));
-            },false);
+            setFontSize(30);
+            ctx.fillText("Click on Screen to Start", canvasWidth / 2, canvasHeight / 4);
 
-            setFontSize(40);
-            ctx.font = "40px 궁서"
-            ctx.fillText("누가 Flex할지 정해보자고! 빠끄!", canvasWidth / 2, canvasHeight / 4);
-
-            
- 
             canvas.addEventListener('mousedown', function (e) {
                 if (!isStarted)
                     loopStart();
