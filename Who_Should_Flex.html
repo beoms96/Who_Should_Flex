@@ -15,26 +15,36 @@
         var NUMBER_FUNCTION_IS_EXECUTED = 0; // number of how many time does interval execute
         var isHide = false; //boolean variable to check status of hiding
 
+        var wannaPlayAgain = false;
+
         window.addEventListener('load', operate, false);
 
         function operate() {
             canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
 
-            var canvasWidth = window.innerWidth;
-            var canvasHeight = window.innerHeight;
-
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight; 
+            var canvasWidth;
+            var canvasHeight;
+           
+            startSetting();
 
             var r = window.innerWidth/25; //radius Of Ball
             var centerX = window.innerWidth/2; //X point of ball's center point
             var centerY = window.innerHeight/2; //Y point of ball's center point
 
+            var flexImg = new Image();
+            flexImg.src = "yeomDa.jpg"
+            flexImg.addEventListener('load', function(){
+                ctx.drawImage( flexImg, 0, canvasHeight- (1 / 4 * canvasHeight),
+                 (1 / 4 * canvasWidth), (1 / 4 * canvasHeight));
+            },false);
 
-            setFontSize(30);
-            ctx.fillText("Click on the screen to start", canvasWidth/2, canvasHeight/2);
+            setFontSize(40);
+            ctx.font = "40px 궁서"
+            ctx.fillText("누가 Flex할지 정해보자고! 빠끄!", canvasWidth / 2, canvasHeight / 4);
 
+            
+ 
             canvas.addEventListener('mousedown', function (e) {
                 if (!isStarted)
                     loopStart();
@@ -47,13 +57,24 @@
                     loopStart();
                 else if (isStarted && isHide)
                     loopStop();
+                else if(wannaPlayAgain){
+
+                }
             })
 
             function start() {
                 ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Erase all
 
+
+                if(NUMBER_FUNCTION_IS_EXECUTED <= 800){
                 setFontSize(30);
-                ctx.fillText("Click on the screen to stop", canvasWidth / 2, canvasHeight / 4);
+                ctx.fillText("속도를 숙지하세요!", canvasWidth / 2, canvasHeight / 4);
+                }
+
+                else{
+                    setFontSize(30);
+                    ctx.fillText("공이 중앙일 때 클릭해주세요!", canvasWidth / 2, canvasHeight / 4);
+                }
 
                 drawXasis();
                 drawYasis();
@@ -71,6 +92,26 @@
                         ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, (NUMBER_FUNCTION_IS_EXECUTED - 500) / 500 / 3 * canvasHeight) 
                     else
                         ctx.fillRect(0, canvasHeight / 5 *2, canvasWidth, canvasHeight / 5 * 1);
+
+                    if (NUMBER_FUNCTION_IS_EXECUTED >= 500 && NUMBER_FUNCTION_IS_EXECUTED < 600){
+                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        setFontSize(30);
+                        ctx.fillText("3초 뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
+                    }
+                    if (NUMBER_FUNCTION_IS_EXECUTED >= 600 && NUMBER_FUNCTION_IS_EXECUTED < 700){
+                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        setFontSize(30);
+                        ctx.fillText("2초 뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
+                    }
+                    if (NUMBER_FUNCTION_IS_EXECUTED >= 700 && NUMBER_FUNCTION_IS_EXECUTED < 800){
+                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        setFontSize(30);
+                        ctx.fillText("1초뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
+                    }  
+                    if(NUMBER_FUNCTION_IS_EXECUTED == 800){
+                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                    }
+
                 }
 
                 NUMBER_FUNCTION_IS_EXECUTED++;
@@ -139,6 +180,14 @@
 
         function findScore() {
             score = 100 - Math.floor(((Math.abs(canvasWidth/2 - centerX)) / (canvasWidth/2) * 100));
+        }
+
+        function startSetting(){
+            canvasWidth = window.innerWidth;
+            canvasHeight = window.innerHeight;
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
         }
     }
     </script>
