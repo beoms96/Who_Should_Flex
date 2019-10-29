@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <script type="text/javascript">
 
-        var dx = Math.floor(Math.random() * 10) + 1; // speed of ball (1 ~ 10)
+        var dx = Math.floor(Math.random() * 13) + 1; // speed of ball (1 ~ 13)
     
-
-        var r = 30; //radius Of Ball
-        var centerX = 250; //X point of ball's center point
-        var centerY = 250; //Y point of ball's center point
-
         var isStarted = false; // before game start : false, after game start : true
         var ballMove; // variable that saves interval
         var score; // final Score
@@ -27,10 +22,15 @@
             ctx = canvas.getContext('2d');
 
             var canvasWidth = window.innerWidth;
-            var canvasHeight = windwo.innerHeight;
+            var canvasHeight = window.innerHeight;
 
             canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            canvas.height = window.innerHeight; 
+
+            var r = window.innerWidth/25; //radius Of Ball
+            var centerX = window.innerWidth/2; //X point of ball's center point
+            var centerY = window.innerHeight/2; //Y point of ball's center point
+
 
             setFontSize(30);
             ctx.fillText("Click on the screen to start", canvasWidth/2, canvasHeight/2);
@@ -53,7 +53,7 @@
                 ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Erase all
 
                 setFontSize(30);
-                ctx.fillText("Click on the screen to stop", canvasWidth / 2, canvasHeight/4);
+                ctx.fillText("Click on the screen to stop", canvasWidth / 2, canvasHeight / 4);
 
                 drawXasis();
                 drawYasis();
@@ -68,9 +68,9 @@
                 if (NUMBER_FUNCTION_IS_EXECUTED >= 500) { // rectangle to hide balls
                     ctx.fillStyle = '#000000';
                     if (NUMBER_FUNCTION_IS_EXECUTED <= 800)
-                        ctx.fillRect(0, 200, canvasWidth, 0 + (NUMBER_FUNCTION_IS_EXECUTED - 500) / 3);
+                        ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, (NUMBER_FUNCTION_IS_EXECUTED - 500) / 500 / 3 * canvasHeight) 
                     else
-                        ctx.fillRect(0, 200, canvasWidth, 100);
+                        ctx.fillRect(0, canvasHeight / 5 *2, canvasWidth, canvasHeight / 5 * 1);
                 }
 
                 NUMBER_FUNCTION_IS_EXECUTED++;
@@ -88,10 +88,8 @@
 
             function loopStop() {
                 clearInterval(ballMove);
-                ctx.clearRect(0, 0, canvasWidth, canvasHeight * 3 / 10);
-                ctx.clearRect(0, 310, canvasWidth, canvasHeight);
-                ctx.clearRect(0, canvasHeight / 2 - canvasWidth/10, canvasWidth, canvasHeight/5);
-
+                ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+            
                 setFontSize(30);
                 ctx.fillText("Your Score", canvasWidth/2, canvasHeight/5);
 
@@ -103,9 +101,8 @@
                 drawYasis()
                 drawBall();
             }
-        }
 
-        function drawXasis() { // X- axis line
+            function drawXasis() { // X- axis line
             ctx.beginPath();
             ctx.moveTo(0, canvasHeight / 2);
             ctx.lineTo(canvasWidth, canvasHeight / 2);
@@ -141,19 +138,16 @@
         }
 
         function findScore() {
-            score = Math.floor(100 - (Math.abs(250 - centerX) / 250 * 100));
+            score = 100 - Math.floor(((Math.abs(canvasWidth/2 - centerX)) / (canvasWidth/2) * 100));
         }
-
+    }
     </script>
 </head>
 
 <body>
-    <div style="border: 1px solid black;">
-
-        <canvas id="canvas" width = 100% height= 100%>
-            Your browser does not support the HTML 5 Canvas.
-        </canvas>
-    </div>
+    <canvas id="canvas" width = 100% height= 100% >
+      Your browser does not support the HTML 5 Canvas.
+    </canvas>
 </body>
 
 </html>
