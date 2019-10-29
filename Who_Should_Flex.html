@@ -7,8 +7,7 @@
     <script type="text/javascript">
 
         var dx = Math.floor(Math.random() * 10) + 1; // speed of ball (1 ~ 10)
-        var canvasWidth = 500;
-        var canvasHeight = 500;
+    
 
         var r = 30; //radius Of Ball
         var centerX = 250; //X point of ball's center point
@@ -26,6 +25,9 @@
         function operate() {
             canvas = document.getElementById('canvas');
             ctx = canvas.getContext('2d');
+
+            var canvasWidth = window.innerWidth;
+            var canvasHeight = windwo.innerHeight;
 
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
