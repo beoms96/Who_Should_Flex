@@ -13,7 +13,7 @@
         var score; // final Score
 
         var NUMBER_FUNCTION_IS_EXECUTED = 0; // number of how many time does interval execute
-        var isHide = false; //boolean variable to check status of hiding
+        var isHide = false; // boolean variable to check status of hiding
 
         var wannaPlayAgain = false;
 
@@ -28,9 +28,9 @@
            
             startSetting();
 
-            var r = window.innerWidth/25; //radius Of Ball
-            var centerX = window.innerWidth/2; //X point of ball's center point
-            var centerY = window.innerHeight/2; //Y point of ball's center point
+            var r = window.innerWidth / 25; // radius Of Ball
+            var centerX = window.innerWidth / 2; // X point of ball's center point
+            var centerY = window.innerHeight / 2; // Y point of ball's center point
 
             setFontSize(30);
             ctx.fillText("Click on Screen to Start", canvasWidth / 2, canvasHeight / 4);
@@ -54,7 +54,6 @@
 
             function start() {
                 ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Erase all
-
 
                 if(NUMBER_FUNCTION_IS_EXECUTED <= 800){
                 setFontSize(30);
@@ -81,25 +80,25 @@
                     if (NUMBER_FUNCTION_IS_EXECUTED <= 800)
                         ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, (NUMBER_FUNCTION_IS_EXECUTED - 500) / 500 / 3 * canvasHeight) 
                     else
-                        ctx.fillRect(0, canvasHeight / 5 *2, canvasWidth, canvasHeight / 5 * 1);
+                        ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, canvasHeight / 5 * 1);
 
                     if (NUMBER_FUNCTION_IS_EXECUTED >= 500 && NUMBER_FUNCTION_IS_EXECUTED < 600){
-                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        ctx.clearRect(0, 0, canvasWidth, (2 / 7) * canvasHeight);
                         setFontSize(30);
                         ctx.fillText("3초 뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
                     }
                     if (NUMBER_FUNCTION_IS_EXECUTED >= 600 && NUMBER_FUNCTION_IS_EXECUTED < 700){
-                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        ctx.clearRect(0, 0, canvasWidth, (2 / 7) * canvasHeight);
                         setFontSize(30);
                         ctx.fillText("2초 뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
                     }
                     if (NUMBER_FUNCTION_IS_EXECUTED >= 700 && NUMBER_FUNCTION_IS_EXECUTED < 800){
-                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        ctx.clearRect(0, 0, canvasWidth, (2 / 7) * canvasHeight);
                         setFontSize(30);
                         ctx.fillText("1초뒤에 암전됩니다!", canvasWidth / 2, canvasHeight / 4);
                     }  
                     if(NUMBER_FUNCTION_IS_EXECUTED == 800){
-                        ctx.clearRect(0,0,canvasWidth,(2/7)*canvasHeight);
+                        ctx.clearRect(0, 0, canvasWidth, (2 / 7) * canvasHeight);
                     }
 
                 }
@@ -122,11 +121,11 @@
                 ctx.clearRect(0, 0, canvasWidth, canvasHeight);
             
                 setFontSize(30);
-                ctx.fillText("Your Score", canvasWidth/2, canvasHeight/5);
+                ctx.fillText("Your Score", canvasWidth / 2, canvasHeight / 5);
 
                 setFontSize(50);
                 findScore();
-                ctx.fillText(String(score) + "%", canvasWidth/2, canvasHeight * 4 /5);
+                ctx.fillText(String(score) + "%", canvasWidth/2, canvasHeight * 4 / 5);
 
                 drawXasis();
                 drawYasis()
