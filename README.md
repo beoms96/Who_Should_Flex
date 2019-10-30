@@ -8,9 +8,16 @@
 
 HTML5 Canvas로 만들어졌습니다. 추후에 서버를 연결해 완성도를 높힐수도 있습니다.
 
-Idea from Min Hyeok Lee, Yoon Ho Jeon 
-
 ### 업데이트 로그
 Ver 1.0.0 : 출시  
 Ver 1.1.0 UI 업데이트
+
+### 개발자
+클라이언트 : @Moai - Kang (강근우)   
+서버 : @bm1478 (조범석)
+
+### 아이디어 제공자
+Min Hyeok Lee(이민혁)   
+Yoon Ho Jeon (전윤호)
+
 
