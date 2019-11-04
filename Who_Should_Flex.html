@@ -78,9 +78,9 @@
                 if (NUMBER_FUNCTION_IS_EXECUTED >= 500) { // rectangle to hide balls
                     ctx.fillStyle = '#000000';
                     if (NUMBER_FUNCTION_IS_EXECUTED <= 800)
-                        ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, (NUMBER_FUNCTION_IS_EXECUTED - 500) / 500 / 3 * canvasHeight) 
+                        ctx.fillRect(0, canvasHeight * (2 / 5), canvasWidth, (NUMBER_FUNCTION_IS_EXECUTED - 500) / (500 * 3) * canvasHeight) 
                     else
-                        ctx.fillRect(0, canvasHeight / 5 * 2, canvasWidth, canvasHeight / 5 * 1);
+                        ctx.fillRect(0, canvasHeight * (2 / 5), canvasWidth, canvasHeight / 5 * 1);
 
                     if (NUMBER_FUNCTION_IS_EXECUTED >= 500 && NUMBER_FUNCTION_IS_EXECUTED < 600){
                         ctx.clearRect(0, 0, canvasWidth, (2 / 7) * canvasHeight);
@@ -125,7 +125,7 @@
 
                 setFontSize(50);
                 findScore();
-                ctx.fillText(String(score) + "%", canvasWidth/2, canvasHeight * 4 / 5);
+                ctx.fillText(String(score) + "%", canvasWidth / 2, canvasHeight * (4 / 5));
 
                 drawXasis();
                 drawYasis()
@@ -143,8 +143,8 @@
 
         function drawYasis() { // y - axis line
             ctx.beginPath();
-            ctx.moveTo(canvasWidth / 2, canvasHeight / 2 - canvasHeight/10);
-            ctx.lineTo(canvasWidth / 2, canvasHeight / 2 + canvasHeight/10);
+            ctx.moveTo(canvasWidth / 2, canvasHeight / 2 - canvasHeight / 10);
+            ctx.lineTo(canvasWidth / 2, canvasHeight / 2 + canvasHeight / 10);
             ctx.closePath();
             ctx.strokeStyle = "#BBBBBB";
             ctx.stroke();
@@ -189,3 +189,5 @@
 </body>
 
 </html>
+
+//추가
