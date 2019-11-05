@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <script type="text/javascript">
 
-        var wsURI = "ws://localhost:80"; //Server address
-        var exampleSocket = new WebSocket(wsURI, "protocolbs");
-        exampleSocket.onopen = function (event) {
-            exampleSocket.send("Connect Server Complete. I send this");
-        }
-
         var dx = Math.floor(Math.random() * 13) + 1; // speed of ball (1 ~ 13)
     
         var isStarted = false; // before game start : false, after game start : true
