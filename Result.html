@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<title>Result </title>
+<script language="javascript" type="text/javascript">
+
+    var wsURI = "ws://localhost:80";
+    var exampleSocket;
+
+    function init()
+    {
+        output = document.getElementById("output");
+        testWebSocket();
+    }
+
+    function testWebSocket()
+    {
+        exampleSocket = new WebSocket(wsURI);
+        exampleSocket.onopen = function(evt) { onOpen(evt); };
+        exampleSocket.onclose = function(evt) { onClose(evt); };
+        exampleSocket.onmessage = function(evt) { onMessage(evt); };
+        exampleSocket.onerror = function(evt) {onError(evt); };
+    }
+
+    function onOpen(evt)
+    {
+        writeToScreen("연결완료");
+    }
+
+    function onClose(evt)
+    {
+        writeToScreen("연결해제");
+    }
+
+    function onMessage(evt)
+    {   
+        writeToScreen('<span style="color: blue;">수신: ' + evt.data +'</span>');
+        exampleSocket.close();
+    }
+
+    function onError(evt)
+    {
+        writeToScreen('<span style="color: red;">에러: '+ evt.data);
+    }
+
+    function doReceive()
+    {
+        exampleSocket.onMessage(evt);
+    }
+
+    function writeToScreen(message)
+    {
+        var pre = document.createElement("p");
+        pre.style.wordWrap = "break-word";
+        pre.innerHTML = message;
+        output.appendChild(pre);
+    }
+
+    window.addEventListener("load", init, false);
+
+</script>
+    <body>
+        <h2>Result </h2>
+        <div id = "output"></div>
+    </body>
+</html>
