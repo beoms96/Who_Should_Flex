@@ -1,13 +1,20 @@
-<script src="/socket.io/socket.io.js"></script>
-<script>
-    //localHost로 연결한다.
-    var socket = io.connect("http://localhost");
+<!DOCTYPE html>
+<html>
 
-    //서버에서 news 이벤트가 일어날 때 데이터를 받는다.
-    socket.on('news', function (data) {
-        console.log(data);
-        //서버에 myother event 이벤트를 보낸다.
-        socket.emit('my other event', 
-        { my: 'data'});
-    });
-</script>
+<head>
+    <title></title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script src="http://localhost:3001/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://localhost:3001');
+        socket.on('news', function (data) {
+            console.log(data);
+            socket.emit('my other event', { my: 'data' });
+        });
+    </script>
+</body>
+
+</html>

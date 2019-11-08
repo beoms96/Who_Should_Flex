@@ -1,13 +1,17 @@
-// 80 포트로 소켓을 연다
-var io = require('socket.io').listen(80);
+var app = require('express')();
+var server = require('http').createServer(app);
+// http server를 socket.io server로 upgrade한다
+var io = require('socket.io').listen(server);
 
-// connection이 발생할 때 핸들러를 실행한다.
-io.sockets.on('connection', function (socket) {
-    // 클라이언트로 news 이벤트를 보낸다.
-    socket.emit('news', { hello: 'world' });
+server.listen(3001);
 
-    // 클라이언트에서 my other event가 발생하면 데이터를 받는다.
-    socket.on('my other event', function (data) {
-        console.log(data);
-    });
+app.get('/', function (req, res) {
+  res.sendfile(__dirname + '/simpleIndex.html');
+});
+
+io.on('connection', function (socket) {
+  socket.emit('news', { hello: 'world' });
+  socket.on('my other event', function (data) {
+    console.log(data);
+  });
 });
