@@ -7,7 +7,7 @@ io.sockets.on('connection', function (socket) {
     socket.emit('news', { hello: 'world' });
 
     // 클라이언트에서 my other event가 발생하면 데이터를 받는다.
-socket.on('my other event', function (data) {
+    socket.on('my other event', function (data) {
         console.log(data);
     });
 });
