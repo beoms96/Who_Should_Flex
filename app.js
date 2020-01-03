@@ -6,7 +6,7 @@ var io = require('socket.io')(server);
 var userInfo = new Array();   //For User
 var scoreInfo = new Array();    //For Score
 
-// localhost:3000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
+// localhost:5000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/Who_Should_Flex.html');
 });
@@ -65,6 +65,10 @@ io.on('connection', function (socket) {
     });
 });
 
-server.listen(3000, function () {
-    console.log('Socket IO server listening on port 3000');
+/*server.listen(5000, '127.0.0.1', function () {
+    console.log('Socket IO server listening on port 5000');
+});*/
+
+server.listen(5000, '0.0.0.0', function () {
+    console.log('Socket IO server listening on port 5000');
 });
