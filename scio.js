@@ -2,7 +2,8 @@ var socket;
 
 $(function () {
     // socket.io 서버에 접속한다
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect('http://13.59.234.130:5000');
+    //socket = io.connect('http://localhost:3000');
 
     // 접속 버튼이 클릭되면
     $("form").submit(function (e) {
