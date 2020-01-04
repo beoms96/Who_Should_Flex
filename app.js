@@ -6,10 +6,11 @@ var io = require('socket.io')(server);
 var userInfo = new Array();   //For User
 var scoreInfo = new Array();    //For Score
 
+app.use('/Who_Should_Flex', express.static(__dirname));
+
+
 // localhost:5000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
 app.get('/', function (req, res) {
-    //res.sendFile(__dirname + '/scio.js');
-    //res.sendFile(__dirname + '/wsf.js');
     res.sendFile(__dirname + '/Who_Should_Flex.html');
 });
 
@@ -52,9 +53,11 @@ io.on('connection', function (socket) {
         // 특정 클라이언트에게만 메시지를 전송한다
         // io.to(id).emit('s2c chat', data);
 
-        if(scoreInfo.length === userInfo.length) { //모든 참여자 게임 완료
+        /*if(scoreInfo.length === userInfo.length) { //모든 참여자 게임 완료
             console.log(scoreInfo);
-        }
+        }*/
+
+        console.log(scoreInfo);
     });
 
     // force client disconnect from server
