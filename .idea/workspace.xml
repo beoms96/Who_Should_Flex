@@ -4,8 +4,6 @@
     <list default="true" id="457e9b87-a283-45b8-b8b9-3528ccbb0c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Who_Should_Flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/Who_Should_Flex.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scio.js" beforeDir="false" afterPath="$PROJECT_DIR$/scio.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,11 @@
       <workItem from="1577600117221" duration="72000" />
       <workItem from="1578041655936" duration="2072000" />
       <workItem from="1578053547959" duration="126000" />
-      <workItem from="1578054042822" duration="3539000" />
+      <workItem from="1578054042822" duration="3639000" />
+      <workItem from="1578058023277" duration="371000" />
+      <workItem from="1578131031375" duration="517000" />
+      <workItem from="1578131650820" duration="688000" />
+      <workItem from="1578132495742" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="test aws ubuntu server">
       <created>1578053647279</created>
@@ -112,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578053647279</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test aws ubuntu server - http">
+      <created>1578057856283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578057856283</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,41 +129,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test aws ubuntu server" />
-    <option name="LAST_COMMIT_MESSAGE" value="test aws ubuntu server" />
+    <MESSAGE value="test aws ubuntu server - http" />
+    <option name="LAST_COMMIT_MESSAGE" value="test aws ubuntu server - http" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="65" y="145" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578131417894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="65" y="145" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1578131417894" />
     <state x="883" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576915392375">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576915392375" />
-    <state x="337" y="10" key="CommitChangelistDialog2" timestamp="1578053644582">
+    <state x="337" y="10" key="CommitChangelistDialog2" timestamp="1578057854934">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="337" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578053644582" />
+    <state x="337" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578057854934" />
     <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1576915276641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576915276641" />
-    <state width="725" height="211" key="GridCell.Tab.0.bottom" timestamp="1578056457038">
+    <state width="723" height="211" key="GridCell.Tab.0.bottom" timestamp="1578057910185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578056457038" />
-    <state width="725" height="211" key="GridCell.Tab.0.center" timestamp="1578056457037">
+    <state width="723" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578057910185" />
+    <state width="723" height="211" key="GridCell.Tab.0.center" timestamp="1578057910184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578056457037" />
-    <state width="725" height="211" key="GridCell.Tab.0.left" timestamp="1578056457037">
+    <state width="723" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578057910184" />
+    <state width="723" height="211" key="GridCell.Tab.0.left" timestamp="1578057910184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578056457037" />
-    <state width="725" height="211" key="GridCell.Tab.0.right" timestamp="1578056457038">
+    <state width="723" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578057910184" />
+    <state width="723" height="211" key="GridCell.Tab.0.right" timestamp="1578057910184">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="725" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578056457038" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1578053662443">
+    <state width="723" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578057910184" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1578057898057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578053662443" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578057898057" />
     <state x="402" y="0" width="739" height="569" key="dock-window-1" timestamp="1578056453784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
