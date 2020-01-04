@@ -8,6 +8,8 @@ var scoreInfo = new Array();    //For Score
 
 // localhost:5000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
 app.get('/', function (req, res) {
+    res.sendFile(__dirname + '/scio.js');
+    res.sendFile(__dirname + '/wsf.js');
     res.sendFile(__dirname + '/Who_Should_Flex.html');
 });
 

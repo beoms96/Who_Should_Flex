@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="457e9b87-a283-45b8-b8b9-3528ccbb0c3e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1578058023277" duration="371000" />
       <workItem from="1578131031375" duration="517000" />
       <workItem from="1578131650820" duration="688000" />
-      <workItem from="1578132495742" duration="980000" />
+      <workItem from="1578132495742" duration="1457000" />
     </task>
     <task id="LOCAL-00001" summary="test aws ubuntu server">
       <created>1578053647279</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578133250821</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="aws server connect - update">
+      <created>1578133614062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578133614062</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +145,8 @@
     <MESSAGE value="test aws ubuntu server" />
     <MESSAGE value="test aws ubuntu server - http" />
     <MESSAGE value="aws server connect" />
-    <option name="LAST_COMMIT_MESSAGE" value="aws server connect" />
+    <MESSAGE value="aws server connect - update" />
+    <option name="LAST_COMMIT_MESSAGE" value="aws server connect - update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="65" y="145" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578131417894">
@@ -149,10 +157,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="883" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576915392375" />
-    <state x="337" y="10" key="CommitChangelistDialog2" timestamp="1578133248640">
+    <state x="337" y="10" key="CommitChangelistDialog2" timestamp="1578133611963">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="337" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578133248640" />
+    <state x="337" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578133611963" />
     <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1576915276641">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -177,10 +185,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="97" y="132" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578133344713" />
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1578133275140">
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1578133619046">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578133275140" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578133619046" />
     <state x="402" y="0" width="739" height="569" key="dock-window-1" timestamp="1578056453784">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
