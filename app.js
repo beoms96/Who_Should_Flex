@@ -44,6 +44,7 @@ io.on('connection', function (socket) {
         scoreInfo.push(msg);
 
         if(scoreInfo.length === userInfo.length) { //모든 참여자 게임 완료
+            io.emit("scoreboard", scoreInfo);
             var wsf = new Array();
             var minScore = scoreInfo[0].score;
             for (var i = 0; i <scoreInfo.length; i++) {

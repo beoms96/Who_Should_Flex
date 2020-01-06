@@ -17,11 +17,17 @@ $(function () {
 
     // 서버로부터 로그인 수신되면
     socket.on("login", function(data) {
-    $("#idLogs").empty();
-    for(var i=0; i<data.length; i++) {
-        $("#idLogs").append("<div><strong>" + data[i].id + "</strong></div>");
-    }
-});
+        $("#idLogs").empty();
+        for(var i=0; i<data.length; i++) {
+            $("#idLogs").append("<div><strong>" + data[i].id + "</strong></div>");
+        }
+    });
+
+    socket.on("scoreboard", function(data) {
+        for(var i = 0; i<data.length; i++) {
+            $("#resultLogs").append("<div><strong>" + data[i].id + ": " + data[i].score + "</strong></div>");
+        }
+    });
 
     // 서버로부터 결과 수신되면
     socket.on("result", function (data) {
