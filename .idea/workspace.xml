@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="457e9b87-a283-45b8-b8b9-3528ccbb0c3e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Who_Should_Flex.html" beforeDir="false" afterPath="$PROJECT_DIR$/Who_Should_Flex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scio.js" beforeDir="false" afterPath="$PROJECT_DIR$/scio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wsf.js" beforeDir="false" afterPath="$PROJECT_DIR$/wsf.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\조범석\Desktop\대학교\KKW\Who_Should_Flex\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VHfeAGJ7oyR2HD5Xra1G3jAsVd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../socketio-chat" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="serverSample.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/serverSample.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.serverSample.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="457e9b87-a283-45b8-b8b9-3528ccbb0c3e" name="Default Changelist" comment="" />
+      <created>1576915033253</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576915033253</updated>
+      <workItem from="1576915036594" duration="7727000" />
+      <workItem from="1576924153835" duration="2724000" />
+      <workItem from="1576927208887" duration="2386000" />
+      <workItem from="1577150510817" duration="770000" />
+      <workItem from="1577326875611" duration="1155000" />
+      <workItem from="1577328869603" duration="161000" />
+      <workItem from="1577332440136" duration="1405000" />
+      <workItem from="1577334402335" duration="310000" />
+      <workItem from="1577525072970" duration="83000" />
+      <workItem from="1577600117221" duration="72000" />
+      <workItem from="1578041655936" duration="2072000" />
+      <workItem from="1578053547959" duration="126000" />
+      <workItem from="1578054042822" duration="3639000" />
+      <workItem from="1578058023277" duration="371000" />
+      <workItem from="1578131031375" duration="517000" />
+      <workItem from="1578131650820" duration="688000" />
+      <workItem from="1578132495742" duration="3547000" />
+      <workItem from="1578273157546" duration="1317000" />
+      <workItem from="1578279276239" duration="148000" />
+      <workItem from="1578282535936" duration="8097000" />
+    </task>
+    <task id="LOCAL-00001" summary="test aws ubuntu server">
+      <created>1578053647279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578053647279</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test aws ubuntu server - http">
+      <created>1578057856283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578057856283</updated>
+    </task>
+    <task id="LOCAL-00003" summary="aws server connect">
+      <created>1578133250821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578133250821</updated>
+    </task>
+    <task id="LOCAL-00004" summary="aws server connect - update">
+      <created>1578133614062</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578133614062</updated>
+    </task>
+    <task id="LOCAL-00005" summary="aws server get part update">
+      <created>1578134075764</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1578134075764</updated>
+    </task>
+    <task id="LOCAL-00006" summary="aws server get part update2">
+      <created>1578134675048</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1578134675048</updated>
+    </task>
+    <task id="LOCAL-00007" summary="aws server get part update3">
+      <created>1578134991256</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1578134991256</updated>
+    </task>
+    <task id="LOCAL-00008" summary="server part script address setting">
+      <created>1578135506910</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1578135506910</updated>
+    </task>
+    <task id="LOCAL-00009" summary="server part calling express way change">
+      <created>1578135819641</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1578135819641</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test aws ubuntu server" />
+    <MESSAGE value="test aws ubuntu server - http" />
+    <MESSAGE value="aws server connect" />
+    <MESSAGE value="aws server connect - update" />
+    <MESSAGE value="aws server get part update" />
+    <MESSAGE value="aws server get part update2" />
+    <MESSAGE value="aws server get part update3" />
+    <MESSAGE value="server part script address setting" />
+    <MESSAGE value="server part calling express way change" />
+    <option name="LAST_COMMIT_MESSAGE" value="server part calling express way change" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Project_Structure" timestamp="1578291229547">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1578291229546" />
+    <state x="65" y="145" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578131417894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="65" y="145" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1578131417894" />
+    <state x="883" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576915392375">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="883" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576915392375" />
+    <state x="337" y="10" key="CommitChangelistDialog2" timestamp="1578135818136">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="337" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1578135818136" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1576915276641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576915276641" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1578291273452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578291273452" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1578291273451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578291273451" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1578291273451">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578291273451" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1578291273452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578291273452" />
+    <state width="724" height="264" key="GridCell.Tab.1.bottom" timestamp="1578290757132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578290757132" />
+    <state width="724" height="264" key="GridCell.Tab.1.center" timestamp="1578290757132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578290757132" />
+    <state width="724" height="264" key="GridCell.Tab.1.left" timestamp="1578290757131">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578290757131" />
+    <state width="724" height="264" key="GridCell.Tab.1.right" timestamp="1578290757132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578290757132" />
+    <state width="724" height="264" key="GridCell.Tab.2.bottom" timestamp="1578290757133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578290757133" />
+    <state width="724" height="264" key="GridCell.Tab.2.center" timestamp="1578290757132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1578290757132" />
+    <state width="724" height="264" key="GridCell.Tab.2.left" timestamp="1578290757132">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1578290757132" />
+    <state width="724" height="264" key="GridCell.Tab.2.right" timestamp="1578290757133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1578290757133" />
+    <state width="724" height="264" key="GridCell.Tab.3.bottom" timestamp="1578290757134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578290757134" />
+    <state width="724" height="264" key="GridCell.Tab.3.center" timestamp="1578290757134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1578290757134" />
+    <state width="724" height="264" key="GridCell.Tab.3.left" timestamp="1578290757133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1578290757133" />
+    <state width="724" height="264" key="GridCell.Tab.3.right" timestamp="1578290757134">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="724" height="264" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1578290757134" />
+    <state x="97" y="132" key="MultipleFileMergeDialog" timestamp="1578133344713">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="97" y="132" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1578133344713" />
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2" timestamp="1578135824028">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1578135824028" />
+    <state x="402" y="0" width="739" height="569" key="dock-window-1" timestamp="1578056453784">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="402" y="0" width="739" height="569" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1578056453784" />
+    <state x="83" y="217" key="git4idea.merge.GitPullDialog" timestamp="1578133328098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="83" y="217" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1578133328098" />
+  </component>
+</project>

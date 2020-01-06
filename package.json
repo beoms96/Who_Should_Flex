@@ -1,0 +1,24 @@
+{
+  "name": "Who_Should_Flex",
+  "version": "1.0.0",
+  "description": "무언가를 결정해야 할 때(주로 술 값을 누가 낼지를 정함) 사다리 타기는 지루해서 만들어본 간단한 웹 게임입니다.",
+  "main": "serverSample.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moai-Kang/Who_Should_Flex.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moai-Kang/Who_Should_Flex/issues"
+  },
+  "homepage": "https://github.com/Moai-Kang/Who_Should_Flex#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "socket.io": "2.3.0"
+  }
+}
