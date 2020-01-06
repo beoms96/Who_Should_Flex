@@ -2,8 +2,8 @@ var socket;
 
 $(function () {
     // socket.io 서버에 접속한다
-    socket = io.connect('http://13.59.234.130:5000');
-    //socket = io.connect('http://localhost:5000');
+    //socket = io.connect('http://13.59.234.130:5000');
+    socket = io.connect('http://localhost:5000');
 
     // 접속 버튼이 클릭되면
     $("form").submit(function (e) {
@@ -23,7 +23,7 @@ $(function () {
     }
 });
 
-    // 서버로부터 결과 수신되면 - 꼴찌
+    // 서버로부터 결과 수신되면
     socket.on("result", function (data) {
         $("#resultLogs").append("<div><strong>" + data + "</strong></div>");
     });

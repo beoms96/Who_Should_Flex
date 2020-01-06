@@ -6,6 +6,7 @@ var score; // final Score
 
 var NUMBER_FUNCTION_IS_EXECUTED = 0; // number of how many time does interval execute
 var isHide = false; // boolean variable to check status of hiding
+var gameDone = false;
 
 var wannaPlayAgain = false;
 
@@ -28,19 +29,19 @@ function operate() {
     canvas.addEventListener('mousedown', function (e) {
         if (!isStarted)
             loopStart();
-        else if (isStarted && isHide)
+        else if (isStarted && isHide && !gameDone)
             loopStop();
     }, false);
 
     canvas.addEventListener('touchstart', function(e){
         if (!isStarted)
             loopStart();
-        else if (isStarted && isHide)
+        else if (isStarted && isHide && !gameDone)
             loopStop();
         else if(wannaPlayAgain){
 
         }
-    })
+    });
 
     function start() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight); // Erase all
@@ -115,8 +116,9 @@ function operate() {
 
         setFontSize(50);
         findScore();
-        socket.emit("score", {result: score})
         ctx.fillText(String(score) + "%", canvasWidth / 2, canvasHeight * (4 / 5));
+        gameDone = true;
+        socket.emit("score", {result: score})
 
         drawXasis();
         drawYasis()
