@@ -9,14 +9,13 @@ var scoreInfo = new Array();    //For Score
 
 app.use('/Who_Should_Flex', express.static(__dirname));
 
-
-// localhost:5000으로 서버에 접속하면 클라이언트로 index.html을 전송한다
+// 서버에 접속하면 클라이언트로 Who_Should_Flex.html을 전송한다
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/Who_Should_Flex.html');
 });
 
 // connection event handler
-// connection이 수립되면 event handler function의 인자로 socket인 들어온다
+// connection이 수립되면 event handler function의 인자로 socket이 들어온다
 io.on('connection', function (socket) {
 
     // 접속한 클라이언트의 정보가 수신되면
@@ -25,40 +24,49 @@ io.on('connection', function (socket) {
 
         // socket에 클라이언트 정보를 저장한다
         socket.name = data.msg;
-        userInfo.push({id: data.msg, isReady: false});
+        //userInfo.push({id: data.msg, isReady: false, isMan: false});
+        userInfo.push({id: data.msg});
+        console.log(userInfo);
 
         // 접속된 모든 클라이언트에게 메시지를 전송한다
         io.emit('login', userInfo);
     });
 
-    // 클라이언트로부터의 메시지가 수신되면
+    // 클라이언트로부터의 점수가 수신되면
     socket.on('score', function (data) {
         console.log('Score from %s: %s', socket.name, data.result);
 
         var msg = {
-            name: socket.name,
-            score: data.result
+            id: socket.name,
+            score: parseInt(data.result)
         };
 
         scoreInfo.push(msg);
 
-        // 메시지를 전송한 클라이언트를 제외한 모든 클라이언트에게 메시지를 전송한다
-        // socket.broadcast.emit('chat', msg);
-
-        // 메시지를 전송한 클라이언트에게만 메시지를 전송한다
-        // socket.emit('s2c chat', msg);
-
-        // 접속된 모든 클라이언트에게 메시지를 전송한다
-        //io.emit('idList', idList);
-
-        // 특정 클라이언트에게만 메시지를 전송한다
-        // io.to(id).emit('s2c chat', data);
-
-        /*if(scoreInfo.length === userInfo.length) { //모든 참여자 게임 완료
-            console.log(scoreInfo);
-        }*/
-
-        console.log(scoreInfo);
+        if(scoreInfo.length === userInfo.length) { //모든 참여자 게임 완료
+            var wsf = new Array();
+            var minScore = scoreInfo[0].score;
+            for (var i = 0; i <scoreInfo.length; i++) {
+                if(scoreInfo[i].score < minScore) {
+                    wsf = new Array();
+                    minScore = scoreInfo[i].score;
+                    wsf.push({id: scoreInfo[i].id, score: scoreInfo[i].score})
+                }
+                else if(scoreInfo[i].score == minScore) {
+                    wsf.push({id: scoreInfo[i].id, score: scoreInfo[i].score})
+                }
+            }
+            console.log(wsf);
+            if(wsf.length == 1) {
+                io.emit("result", "Loser: " + wsf[0].id);
+            }
+            else {
+                var rand = wsf[Math.floor(Math.random() * wsf.length)];
+                io.emit("result", "Loser: " + rand.id);
+            }
+            userInfo = new Array();
+            scoreInfo = new Array();
+        }
     });
 
     // force client disconnect from server
@@ -68,12 +76,12 @@ io.on('connection', function (socket) {
 
     socket.on('disconnect', function () {
         console.log('user disconnected: ' + socket.name);
+        const idx = userInfo.findIndex(function(item) {return item.id == socket.name;});
+        if (idx>-1) userInfo.splice(idx, 1);
+        if (idx>-1) scoreInfo.splice(idx, 1);
+        console.log(userInfo, scoreInfo);
     });
 });
-
-/*server.listen(5000, '127.0.0.1', function () {
-    console.log('Socket IO server listening on port 5000');
-});*/
 
 server.listen(5000, '0.0.0.0', function () {
     console.log('Socket IO server listening on port 5000');

@@ -23,8 +23,8 @@ $(function () {
     }
 });
 
-    // 서버로부터 결과 수신되면
-    socket.on("Result", function (data) {
-        // $("#idLogs").append("<div>" + data.msg + " : from <strong>" + data.from.name + "</strong></div>");
+    // 서버로부터 결과 수신되면 - 꼴찌
+    socket.on("result", function (data) {
+        $("#resultLogs").append("<div><strong>" + data + "</strong></div>");
     });
 });
