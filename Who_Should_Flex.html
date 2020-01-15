@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Who Should Flex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div class="container" id="inputArea">
-        <h3>Who Should Flex Game</h3>
+        <img id ="logo" src="./wsfLogo.png" alt="로고">
         <form class="form-inline">
             <div class="form-group">
                 <label for="msgForm">ID: </label>
-                <input type="text" class="form-control" id="msgForm">
+                <input type="text" class="form-control" id="msgForm" placeholder="이름을 입력해!">
             </div>
             <button type="submit" class="btn btn-primary" id="startBtn">접속</button>
         </form>
@@ -25,8 +26,8 @@
     <script type = "text/javascript" src = "/Who_Should_Flex/scio.js"></script>
     <script type = "text/javascript" src = "/Who_Should_Flex/wsf.js"></script>
     <script type = "text/javascript">
-        var input = document.getElementById('inputArea');
-        var startBtn = document.getElementById('startBtn');
+        let input = document.getElementById('inputArea');
+        let startBtn = document.getElementById('startBtn');
         startBtn.addEventListener('click', function(e) {
             input.hidden = true;
             operate(socket);

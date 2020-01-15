@@ -1,0 +1,31 @@
+#logo {
+    width : 100%;
+    height:70vh;
+}
+
+body {
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    margin : 0;
+    padding : 0;
+}
+
+#inputArea {
+    display:grid;
+    grid-template-rows : 7fr 3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "logo"
+    "form";
+
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#logo { grid-area: logo; }
+.form-inline   { 
+    grid-area: form; 
+    width: 50vh;
+  }
