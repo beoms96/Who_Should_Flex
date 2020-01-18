@@ -24,6 +24,7 @@ $(function () {
     });
 
     socket.on("scoreboard", function(data) {
+        document.getElementById('canvas').style.display = "none";
         for(var i = 0; i<data.length; i++) {
             $("#resultLogs").append("<div><strong>" + data[i].id + ": " + data[i].score + "</strong></div>");
         }

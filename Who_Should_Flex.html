@@ -26,10 +26,8 @@
     <script type = "text/javascript" src = "/Who_Should_Flex/scio.js"></script>
     <script type = "text/javascript" src = "/Who_Should_Flex/wsf.js"></script>
     <script type = "text/javascript">
-        let input = document.getElementById('inputArea');
-        let startBtn = document.getElementById('startBtn');
-        startBtn.addEventListener('click', function(e) {
-            input.hidden = true;
+        document.getElementById('startBtn').addEventListener('click', function(e) {
+            document.getElementById('inputArea').style.display = "none";
             operate(socket);
         }, false);
     </script>
