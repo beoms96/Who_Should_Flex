@@ -13,11 +13,11 @@ Ver 1.0.0 : 출시
 Ver 1.1.0 UI 업데이트
 
 ### 개발자
-클라이언트 : @Moai - Kang (강근우)   
-서버 : @bm1478 (조범석)
+클라이언트 : [moaikang](https://github.com/moaikang)   
+서버 : [bm1478](https://github.com/bm1478)
 
 ### 아이디어 제공자
-Min Hyeok Lee(이민혁)   
+Min Hyeok Lee (이민혁)   
 Yoon Ho Jeon (전윤호)
 
 
