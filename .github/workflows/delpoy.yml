@@ -22,6 +22,6 @@ jobs:
           script: |
             cd ~/Who_Should_Flex
             git fetch
-            git pull origin dev
+            git pull origin master
             npm install
             pm2 restart wsf
