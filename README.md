@@ -9,8 +9,9 @@
 HTML5 Canvas로 만들어졌습니다.
 
 ### 업데이트 로그
-Ver 1.0.0 : 출시  
-Ver 1.1.0 UI 업데이트
+Ver 1.0.0: 출시  
+Ver 1.1.0: UI 업데이트
+Ver 1.2.0: Auto Deploy 
 
 ### 개발자
 클라이언트 : [moaikang](https://github.com/moaikang)   
